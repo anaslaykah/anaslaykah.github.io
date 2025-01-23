@@ -1,20 +1,20 @@
 title: My CV
-profile_img: /assets/img/profile.webp
+profile_img: /assets/img/profile.jpg
 icon_img: /assets/img/icon.webp
 
 name: Anas Laykah
 job: Software Engineer
 
-phone_number: 012-345-6789
+phone_number: 0172-8811586
 address: Jena, Germany
 email: anas.laykah@gmail.com
-linkedin_username: linkedin
-github_username: github
-instagram_username: instagram
-twitter_username: twitter
-facebook_username: facebook
-youtube_username: youtube
-blog_url: homepage-url
+linkedin_username: anas-laykah-1837981bb
+github_username: Sleuthing
+#instagram_username: instagram
+#twitter_username: twitter
+#facebook_username: facebook
+#youtube_username: youtube
+#blog_url: homepage-url
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
 # Otherwise, set its value as "/<repo-name>". ex) baseurl: /resume

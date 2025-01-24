@@ -4,9 +4,11 @@ icon: "/assets/img/briefcase.svg"
 contents:
   - title: EBTech
     role: Odoo ERP Fullstack developer
+    link: "https://ebtechco.com/"
     description:
-      - Led development of a new chatbot software utilizing large language model
-      - Co-designer of '*Kopilot*' and '*Gemmini*'
+      - Built Odoo modules from their conceptual drafts up to a functional code implementation.
+      - Modified existing modules with enhanced functionality.
+      - Facilitated adaptation to code differences between different versions of Odoo.
     date: Jan. 2024 - Ongoing
   - title: Amazone
     role: Senior Software Engineer

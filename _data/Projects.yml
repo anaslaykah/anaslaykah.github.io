@@ -2,20 +2,25 @@ subject: Projects
 listing-order: 3
 icon: "/assets/img/clipboard-list.svg"
 contents:
-  - title: "ChatPPT ([https://chat.opena1.com/](https://chat.openai.com/))"
+  - title: Odoo module - Offline Job Queue (at EBTech)
     description: 
-      - Chatbot developed based on a large language model
-      - Designed Generative algorithm to generate novel human-like content
-      - "Technology Used: Rust, Typescript, Python, Ruby"
-    image: "![](https://i.ibb.co/hX2wYLB/231321.webp)"
-  - title: "AW5-cli ([https://github.com/aw5/aw5-cli](https://github.com/aws/aws-cli))"
+      - Built an Odoo module from scratch that relied on the publicly available module Job Queue.
+      - The module handled the storing of operations carried out by users during times of non-connectivity to the internet, then executed them when the connection was back on. The execution was done chronologically according to each user's context and permissions using a server-side scheduled action that would fire up periodically.
+      - The module handled both single and bulk operations in order to send them to the server through JSON and HTTP controllers as efficiently as possible, while also supporting the ability of sending files in case the operation involved the upload of a certain file.
+      - "Technologies Used: Odoo(Python), XML, Postman, Docker"
+    #image: "![](https://i.ibb.co/hX2wYLB/231321.webp)"
+  - title: Odoo module - Excel Report Builder (at EBTech)
     description: 
-      - Universal Command Line Interface for Amazone Web Services
-      - Developed a scheme to facilitate users’ authentication without having to remember their credentials
-      - "Technology Used: Typescript, Python, Go"
-    image: "![](https://i.ibb.co/Ttb5Qn9/21321312.webp)"
-  - title: "PiTorch ([https://pitorch.org/](https://pytorch.org/))" 
-    description: 
-      - Machine learning library for applications such as computer vision and natural language processing
-      - "Technology Used: Python, Cuda, Objective-C++"
-    image: "![](https://i.ibb.co/R9150c4/12421323.webp)"
+      - Built an Odoo module from scratch that relied in part on another module that belonged to the company to get the raw data from the DB and on the publicly available module Base report xlsx to build the report, the main idea was to build a module that -with the use of abstraction- would automatically be integrated on any other module once installed; and allow the non-technical user to create .xlsx reports from the browser without having to ask someone to define it by code beforehand (as the documentation in the Base report module shows).
+      - "The module offered vast customizability which was demonstrated by:
+          - Visually formatting the data presented in the reports.
+          - Choosing to show only partial and relevant data instead of having to deal with entire records.
+          - Displaying parent-child relations between records in multiple ways depending on the user's desire.
+          - The ability to group records by any desired column and display aggregated values for each group."
+      - "Technologies Used: Odoo(Python), XML, Javascript, Docker"
+    #image: "![](https://i.ibb.co/Ttb5Qn9/21321312.webp)"
+  # - title: "PiTorch ([https://pitorch.org/](https://pytorch.org/))" 
+  #   description: 
+  #     - Machine learning library for applications such as computer vision and natural language processing
+  #     - "Technology Used: Python, Cuda, Objective-C++"
+  #   image: "![](https://i.ibb.co/R9150c4/12421323.webp)"

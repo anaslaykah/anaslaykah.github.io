@@ -1,24 +1,34 @@
 subject: Experiences
-listing-order: 2
+listing-order: 1
 icon: "/assets/img/briefcase.svg"
 contents:
   - title: EBTech
-    role: Odoo ERP Fullstack developer
+    role: Odoo ERP Fullstack Developer
     link: "https://ebtechco.com/"
     description:
       - Built Odoo modules from their conceptual drafts up to a functional code implementation.
       - Modified existing modules with enhanced functionality.
       - Facilitated adaptation to code differences between different versions of Odoo.
-    date: Jan. 2024 - Ongoing
-  - title: Amazone
-    role: Senior Software Engineer
+    date: Jun. 2023 - Oct. 2023
+  - title: Freelance Developer
+    role: Web and Python Engineer
     description: 
-      - Built a Java microservice, database schema to manage customer accounts
-      - Enhanced internal pipelines to query real-time data from client devices
-    date: Apr. 2016 - Dec. 2018
-  - title: Pacebook
-    role: Software Engineer Intern
+      - Javascript Webbrowser-Scripting.
+      - Python automation Scripting .
+      - Image processing.
+      - Telegram Bot making in Python.
+    date: Oct. 2021 - Feb. 2023
+  - title: Syrian Society for Scientic Research - SySSR
+    role: Junior Web Developer
+    link: "https://syssr.org/"
     description: 
-      - Designed the dynamic website using React for data visualization
-      - Integrated '*Yolo*' to boost the accuracy of the object detection
-    date: Jul. 2013 - Sep. 2013
+      - Developing new frontend features and improving UI/UX.
+      - Enhancing backend features to give better and cleaner translation results.
+    date: Aug. 2020 - Oct. 2022
+  - title: Syrian Society for Scientic Research - SySSR
+    role: Trainee Python
+    link: "https://syssr.org/"
+    description: 
+      - Researched solutions with multiple python libraries like pdfminer and pypdf to extract data from publicly available academic pdf-files in efforts towards generating an Arabic dataset of words.
+      - First experience and introduction to OpenNMT.
+    date: Jan. 2020 - Jun. 2020

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     const tocbox = document.querySelector('.toc-box');
     var headers = document.querySelectorAll('.subject-name');
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         tocItem.append(itemLink);
 
-        tocItem.addEventListener('click', function(){
+        tocItem.addEventListener('click', function () {
             h.scrollIntoView({
                 behavior: 'smooth'
             });
@@ -23,23 +23,23 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var contents = document.querySelectorAll('.subject, .item');
 
-    setInterval(function(){
+    setInterval(function () {
         var scrollPos = document.documentElement.scrollTop;
         var wh = window.innerHeight;
 
-        Array.from(tocbox.querySelectorAll('li')).forEach(function(tocItem){
+        Array.from(tocbox.querySelectorAll('li')).forEach(function (tocItem) {
             tocItem.classList.remove('active');
         });
 
         var currHead;
 
-        Array.from(headers).forEach(function(h){
-            let headPos = h.getBoundingClientRect().top + window.scrollY - wh/2;
+        Array.from(headers).forEach(function (h) {
+            let headPos = h.getBoundingClientRect().top + window.scrollY - wh / 2;
 
             if (scrollPos > headPos) currHead = h;
         });
 
-        Array.from(contents).forEach(function(c){
+        Array.from(contents).forEach(function (c) {
             let contentPos = c.getBoundingClientRect().top + window.scrollY - wh;
 
             if (c.classList.contains("appear")) return;
@@ -49,9 +49,15 @@ document.addEventListener('DOMContentLoaded', function(){
             c.classList.add('appear');
         });
 
-        if (currHead != undefined){
+        if (currHead != undefined) {
             let tocLink = document.getElementById("toc-id-" + currHead.textContent);
             tocLink.classList.add('active');
         }
     }, 200);
 });
+
+function toggleDarkMode() {
+    document.querySelectorAll('*').forEach(function (element) {
+        element.classList.toggle('dark-mode');
+    });
+}

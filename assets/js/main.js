@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var contents = document.querySelectorAll('.subject, .item');
 
-    setInterval(function () {
+    window.addEventListener('scroll', function () {
         var scrollPos = document.documentElement.scrollTop;
         var wh = window.innerHeight;
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         Array.from(headers).forEach(function (h) {
             let headPos = h.getBoundingClientRect().top + window.scrollY - wh / 2;
-
+           
             if (scrollPos > headPos) currHead = h;
         });
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let tocLink = document.getElementById("toc-id-" + currHead.textContent);
             tocLink.classList.add('active');
         }
-    }, 200);
+    })
 });
 
 function toggleDarkMode() {

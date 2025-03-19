@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    window.scrollTo(window.scrollX, window.scrollY + 4);
     const tocbox = document.querySelector('.toc-box');
     var headers = document.querySelectorAll('.subject-name');
 

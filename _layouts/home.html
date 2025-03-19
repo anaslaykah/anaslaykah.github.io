@@ -46,18 +46,7 @@
             <div><span>{{ site.email }}</span></div>
           </a></li>
         {% endif %}
-        {% if site.linkedin_username %}
-        <li><a aria-label="My LinkedIn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-            <img src="{{ '/assets/img/linkedin.svg' | prepend: site.baseurl }}" alt="My LinkedIn">
-            <div><span>@{{ site.linkedin_username }}</span></div>
-          </a></li>
-        {% endif %}
-        {% if site.github_username %}
-        <li><a aria-label="My Github" href="https://github.com/{{ site.github_username }}">
-            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="My Github">
-            <div><span>@{{ site.github_username }}</span></div>
-          </a></li>
-        {% endif %}
+        
         {% if site.twitter_username %}
         <li><a aria-label="My Twitter" href="https://twitter.com/{{ site.twitter_username }}">
             <img src="{{ '/assets/img/twitter.svg' | prepend: site.baseurl }}" alt="My Twitter">
@@ -88,6 +77,18 @@
             <div><span>{{ site.blog_url }}</span></div>
           </a></li>
         {% endif %}
+        {% if site.linkedin_username %}
+        <li><a aria-label="My LinkedIn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+            <img src="{{ '/assets/img/linkedin.svg' | prepend: site.baseurl }}" alt="My LinkedIn">
+            <div><span>@{{ site.linkedin_username }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.github_username %}
+        <li><a aria-label="My Github" href="https://github.com/{{ site.github_username }}">
+            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="My Github">
+            <div><span>@{{ site.github_username }}</span></div>
+          </a></li>
+        {% endif %}
       </ul>
     </div>
     <div class="name-zone">
@@ -109,6 +110,7 @@
           {% for member in subject.contents %}
           <li class="item">
             <div class="content-header">
+              
               {% if member.link %}
               <a href="{{ member.link }}">{{ member.title | markdownify }}</a>
               {% else %}
@@ -123,6 +125,9 @@
             </div>
             {% for item in member %}
             {% if item[0] != "title" and item[0] != "date" and item[0] != "link"%}
+            {% if item[0] == "technologies" %}
+              <strong><span>Technologies Used:</span></strong>
+            {% endif %}
             {% if item[1].first %}
             <ul>
               {% for subitem in item[1] %}

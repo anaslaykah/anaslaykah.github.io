@@ -2,8 +2,24 @@ subject: Projects
 listing-order: 3
 icon: "/assets/img/clipboard-list.svg"
 contents:
-  - title: Odoo module - Offline Job Queue (at EBTech)
+  - title: Shell in Golang
     description: 
+    - Rebuilding Shell in a (TDD)Test Driven Development style project. 
+    - I chose Golang to get more familiar with the language and give myself a challenge.
+    - "The project supports core Shell functionalities in addition to 2 extensions: navigation of directories and redirection of stdout and stderr."
+    technologies: 
+    - Git, Go, VS Code, Shell
+  - title: Datacamp Data Science Courses and Projects
+    description:
+      - "Completed multiple data science courses: 1- Exploratory data analysis in Python 2- Data manipulation & Joining data -with Pandas"
+      - "Applied projects through DataCamp, including:
+      1- Will this customer purchase your product? 2- Uncovering the world's oldest businesses
+      3- Exploring NYC public school test results scores 4- Visualizing the history of Nobel prize
+      winners"
+    technologies: 
+      - Python(Pandas, Numpy, Matplotlib), SQL
+  - title: Odoo module - Offline Job Queue (at EBTech)
+    description:
       - Built an Odoo module from scratch that relied on the publicly available module Job Queue.
       - The module handled the storing of operations carried out by users during times of non-connectivity to the internet, then executed them when the connection was back on. The execution was done chronologically according to each user's context and permissions using a server-side scheduled action that would fire up periodically.
       - The module handled both single and bulk operations in order to send them to the server through JSON and HTTP controllers as efficiently as possible, while also supporting the ability of sending files in case the operation involved the upload of a certain file.
@@ -26,3 +42,5 @@ contents:
   #     - Machine learning library for applications such as computer vision and natural language processing
   #     - "Technology Used: Python, Cuda, Objective-C++"
   #   image: "![](https://i.ibb.co/R9150c4/12421323.webp)"
+
+  

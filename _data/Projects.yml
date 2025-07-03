@@ -3,6 +3,7 @@ listing-order: 3
 icon: "/assets/img/clipboard-list.svg"
 contents:
   - title: Shell in Golang
+    date: Feb. 2025
     description: 
     - Rebuilding Shell in a (TDD)Test Driven Development style project. 
     - I chose Golang to get more familiar with the language and give myself a challenge.
@@ -10,6 +11,7 @@ contents:
     technologies: 
     - Git, Go, VS Code, Shell
   - title: Datacamp Data Science Courses and Projects
+    date: Sep. & Oct. 2024
     description:
       - "Completed multiple data science courses: 1- Exploratory data analysis in Python 2- Data manipulation & Joining data -with Pandas"
       - "Applied projects through DataCamp, including:
@@ -19,6 +21,7 @@ contents:
     technologies: 
       - Python(Pandas, Numpy, Matplotlib), SQL
   - title: Odoo module - Offline Job Queue (at EBTech)
+    date: Sep. & Oct. 2023
     description:
       - Built an Odoo module from scratch that relied on the publicly available module Job Queue.
       - The module handled the storing of operations carried out by users during times of non-connectivity to the internet, then executed them when the connection was back on. The execution was done chronologically according to each user's context and permissions using a server-side scheduled action that would fire up periodically.
@@ -27,6 +30,7 @@ contents:
       - Odoo(Python), XML, Postman, Docker
     #image: "![](https://i.ibb.co/hX2wYLB/231321.webp)"
   - title: Odoo module - Excel Report Builder (at EBTech)
+    date: Aug. & Sep. 2023
     description: 
       - Built an Odoo module from scratch that relied in part on another module that belonged to the company to get the raw data from the DB and on the publicly available module Base report xlsx to build the report, the main idea was to build a module that -with the use of abstraction- would automatically be integrated on any other module once installed; and allow the non-technical user to create .xlsx reports from the browser without having to ask someone to define it by code beforehand (as the documentation in the Base report module shows).
       - "The module offered vast customizability which was demonstrated by:
@@ -36,6 +40,14 @@ contents:
           - The ability to group records by any desired column and display aggregated values for each group."
     technologies: 
       - Odoo(Python), XML, Javascript, Docker
+  - title: Auto Translation (Arabic To English)
+    link: https://syssr.org/portfolio-items/machine-translation/
+    date: 2019 - 2022
+    description: 
+      - a project aimed to build a more Arabic sensitive translation service that can compete with other popular services.
+      - The initial scope was training on translated Academic data.
+    technologies: 
+      - Python(PyQT, Django, OpenNMT), Javascript(Jquery), Bootstrap
     #image: "![](https://i.ibb.co/Ttb5Qn9/21321312.webp)"
   # - title: "PiTorch ([https://pitorch.org/](https://pytorch.org/))" 
   #   description: 
